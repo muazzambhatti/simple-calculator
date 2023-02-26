@@ -20,15 +20,18 @@
 
         #calculator {
             display: flex;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
             box-sizing: border-box;
             border: 1px solid black;
             border-radius: 5px;
             width: 300px;
-            height: 500px;
+            height: 460px;
         }
 
         #display {
+            box-sizing: border-box;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -46,6 +49,57 @@
             margin: 10px 0px;
             height: 50px;
         }
+
+        #operators {
+            display: flex;
+            box-sizing: border-box;
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 300px;
+            width: 90%;
+        }
+
+        .operator-buttons-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background-color: antiquewhite;
+            /* display: inline-block; */
+            width: 55px;
+            height: 65px;
+        }
+        .operator-buttons-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background-color: rgb(231, 96, 96);
+            /* display: inline-block; */
+            width: 55px;
+            height: 50px;
+        }
+        #number-inputs {
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            /* border: 2px solid green; */
+            width: 75%;
+            font-size: 35px;
+        }
+        #arithmatic-inputs {
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 25%;
+            /* border: 2px solid yellow; */
+            font-size: 35px;
+
+        }
     </style>
 </head>
 
@@ -60,8 +114,38 @@
 
                 </p>
             </div>
+            <div id="operators">
+                <div id="number-inputs">
+                    <div class="operator-buttons-1" id="one" onclick="input_one()">1</div>
+                    <div class="operator-buttons-1">2</div>
+                    <div class="operator-buttons-1">3</div>
+                    <div class="operator-buttons-1">4</div>
+                    <div class="operator-buttons-1">5</div>
+                    <div class="operator-buttons-1">6</div>
+                    <div class="operator-buttons-1">7</div>
+                    <div class="operator-buttons-1">8</div>
+                    <div class="operator-buttons-1">9</div>
+                    <div class="operator-buttons-1">.</div>
+                    <div class="operator-buttons-1">0</div>
+                    <div class="operator-buttons-1">00</div>
+                </div>
+                <div id="arithmatic-inputs">
+                    <div class="operator-buttons-2">÷</div>
+                    <div class="operator-buttons-2">×</div>
+                    <div class="operator-buttons-2">+</div>
+                    <div class="operator-buttons-2">-</div>
+                    <div class="operator-buttons-2">=</div>
+                </div>
+
+            </div>
         </div>
     </div>
+    <script>
+        console.log("hi")
+        function input_one(p) {
+            p.getElementById("input-show").innerHTML("1");
+        }
+    </script>
 </body>
 
 </html>
