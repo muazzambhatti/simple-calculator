@@ -196,13 +196,25 @@
             display = document.getElementById("input-show").innerHTML;
             input = document.getElementById("input-show").innerHTML=display+"9";
         }
+        function input_zero() {
+            display = document.getElementById("input-show").innerHTML;
+            input = document.getElementById("input-show").innerHTML=display+"0";
+        }
+        function input_point() {
+            display = document.getElementById("input-show").innerHTML;
+            input = document.getElementById("input-show").innerHTML=display+".";
+        }
+        function input_doublezero() {
+            display = document.getElementById("input-show").innerHTML;
+            input = document.getElementById("input-show").innerHTML=display+"00";
+        }
         function input_divide() {
             display = document.getElementById("input-show").innerHTML;
-            input = document.getElementById("input-show").innerHTML=display+"÷";
+            input = document.getElementById("input-show").innerHTML=display+"/";
         }
         function input_multiply() {
             display = document.getElementById("input-show").innerHTML;
-            input = document.getElementById("input-show").innerHTML=display+"×";
+            input = document.getElementById("input-show").innerHTML=display+"*";
         }
         function input_addition() {
             display = document.getElementById("input-show").innerHTML;
@@ -216,7 +228,6 @@
             display = document.getElementById("input-show").innerHTML;
             input = document.getElementById("output-show").innerHTML = eval(display);
         }
-        math.
     </script>
 </body>
 
